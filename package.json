@@ -4,6 +4,8 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
+    "css": "node-sass src/style.scss -o dist",
+    "css:watch": "npm run css && node-sass src/style.scss -wo dist",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
@@ -11,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.0.1"
+    "lite-server": "^2.0.1",
+    "node-sass": "^3.4.2"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
